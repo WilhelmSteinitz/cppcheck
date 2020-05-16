@@ -81,3 +81,10 @@ jobs:
           xcopy /S Build\gui bin
           cd win_installer
           msbuild -m cppcheck.wixproj /p:Platform=x64,ProductVersion=0.123
+          dir
+
+      - name: Upload Installer
+      - uses: actions/upload-artifact@v2
+        with:
+          name: installer
+          path: cppcheck.msi
