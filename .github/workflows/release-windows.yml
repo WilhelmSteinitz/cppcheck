@@ -85,5 +85,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: installer
-          path: cppcheck.msi
+          name: Build
+          path: Build/
