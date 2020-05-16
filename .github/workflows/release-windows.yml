@@ -82,8 +82,9 @@ jobs:
           cd win_installer
           msbuild -m cppcheck.wixproj /p:Platform=x64,ProductVersion=0.123
           dir
+          dir build
 
       - uses: actions/upload-artifact@v2
         with:
           name: Build
-          path: Build/
+          path: win_installer/Build/
