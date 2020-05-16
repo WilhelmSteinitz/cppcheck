@@ -70,7 +70,8 @@ jobs:
           
       - name: Build Installer
         run: |
-          cd c:\
+          c:
+          cd \
           dir /s Microsoft_VC*.msm
           mkdir bin
           xcopy /S Build\gui bin
